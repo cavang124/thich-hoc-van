@@ -1,0 +1,143 @@
+/* Sidebar */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#sidebar-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    background: #343a40;
+    opacity: 0.9;
+    transition: all .5s;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Main Content */
+
+.pagi {
+    background-color: #17a2b87a;
+    color: var(--danger);
+    padding: 4px 10px;
+    border-radius: 100px;
+    margin: 5px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    /* padding: 15px; */
+    transition: all .5s;
+}
+
+#menu-toggle {
+    transition: all .3s;
+    /* font-size: 2em; */
+}
+
+.container-customer {
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fad3ce08
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Change the width of the sidebar to display it*/
+
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 250px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 250px;
+}
+
+
+/* Sidebar styling */
+
+.background-color-main {
+    background-color: #fad3ce;
+}
+
+.c-black {
+    color: black;
+}
+
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+    transition: all .5s;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+    width: 100%;
+    transition: all .3s;
+    padding: 10px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.sidebar-nav li:hover {
+    background: #212529;
+}
+
+.sidebar-nav li .active {
+    background: #212529;
+}
+
+@media (max-width: 768px) {
+    .none .d-flex {
+        display: none !important;
+    }
+    .container-customer {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #fad3ce08
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
